@@ -26,4 +26,4 @@ npm install --save jquery@1.9.1
 npm install --save bootstrap
 ```
 
-Edit `angular.json` and add `"node_modules/bootstrap/dist/css/bootstrap.min.css",` to "styles".
+Add `@import "~bootstrap/dist/css/bootstrap.css"` to *style.css*.
