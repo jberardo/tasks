@@ -11,8 +11,8 @@
 	<groupId>ca.berardo.maja</groupId>
 	<artifactId>maja-tasks</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>demo</name>
-	<description>Demo project for Spring Boot</description>
+	<name>tasks</name>
+	<description>Tasks project for Spring Boot with Angular</description>
 
 	<properties>
 		<java.version>11</java.version>
