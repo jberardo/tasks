@@ -6,6 +6,7 @@ import { Task } from './task.model';
 @Injectable()
 export class TaskService {
 
+    // event to emit after a new task is added (task-add component onTaskAdd())
     onTaskAdded = new EventEmitter<Task>();
 
     constructor(private http: Http) {
