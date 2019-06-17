@@ -60,3 +60,30 @@ Then open `package.json` and edit the following line:
 To start the frontend app: `npm start`
 
 <small>Docs: https://github.com/angular/angular-cli/blob/master/docs/documentation/stories/proxy.md</small>
+
+## Spring Boot Integration
+
+### Deploying angular app to spring boot `/resources/static`
+
+Install the following packages:
+```
+npm install --save-dev rimraf
+npm install --save-dev mkdirp
+npm install --save-dev copyfiles
+```
+
+<small>rimraf is the same as `rm -rf` but for node</small>
+
+Add goals to package.json:
+```json
+  "scripts": {
+    ...
+    "postbuild": "npm run deploy",
+    "predeploy": "rimraf ../resources/static/ && mkdirp ../resources/static",
+    "deploy": "copyfiles -f dist/** ../resources/static"
+    ...
+  },
+```
+
+To build, type:
+`npm run build`
