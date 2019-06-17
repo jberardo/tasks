@@ -1,5 +1,6 @@
 package ca.berardo.maja.tasks.controller;
 
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -13,6 +14,7 @@ import lombok.RequiredArgsConstructor;
 @RestController
 @RequiredArgsConstructor
 @RequestMapping("/api/v1/tasks")
+@CrossOrigin("http://localhost:4200")
 public class TaskController {
 
   private final TaskService taskService;

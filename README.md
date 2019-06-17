@@ -27,3 +27,10 @@ npm install --save bootstrap
 ```
 
 Add `@import "~bootstrap/dist/css/bootstrap.css"` to *style.css*.
+
+
+### Creating rest service consumer
+```
+npm install --install @angular/http
+npm install rxjs@6 rxjs-compat@6 --save
+```
