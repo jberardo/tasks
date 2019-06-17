@@ -1,10 +1,29 @@
 # Spring Boot with Angular
 
-## Spring Boot
+## Introduction
 
-Tasks backend app using Java with Spring Boot.
+Backend app to create Tasks using Java with Spring Boot.
 
-## Angular
+Simple task component created with Angular.
+
+## Running
+
+Clone this repository:
+```
+git clone https://github.com/jberardo/tasks-app
+cd tasks-app
+```
+
+Run the Spring Boot app followed by the angular app:
+
+```
+mvn spring-boot:run
+npm start
+```
+
+## Steps to recreate from scratch
+
+Those are some personal notes on how to create the angular frontend from scratch.
 
 ### Creating a new Angular project
 Run the following commands from the directory *src/main*: `ng new frontend`. <br>
