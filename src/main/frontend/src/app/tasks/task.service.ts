@@ -13,16 +13,15 @@ export class TaskService {
     }
 
     getTasks() {
-        return this.http.get('http://localhost:8080/api/v1/tasks').map(response => response.json());
+        return this.http.get('/api/v1/tasks').map(response => response.json());
     }
 
     saveTask(task: Task, checked: boolean) {
         task.completed = checked;
-        return this.http.post('http://localhost:8080/api/v1/tasks', task).map(response => response.json());
+        return this.http.post('/api/v1/tasks', task).map(response => response.json());
     }
 
     addTask(task: Task) {
-        return this.http.post('http://localhost:8080/api/v1/tasks', task).map(response => response.json());
+        return this.http.post('/api/v1/tasks', task).map(response => response.json());
     }
-
 }
